@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 export function Lamp() {
   return (
     <div className="relative h-screen flex items-center justify-center">
-      <LampContainer />
+      <LampContainer>
+        <p></p>
+      </LampContainer>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
