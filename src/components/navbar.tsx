@@ -1,11 +1,17 @@
 "use client";
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 
 export function Navbar() {
     return (
-        <nav className="absolute top-0 left-0 w-full flex bg-transparent p-4 z-10">
+        <motion.nav 
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: [0.42, 0, 0.58, 1] }}
+            className="absolute top-0 left-0 w-full flex bg-transparent p-4 z-10"
+        >
             <div className="hidden sm:flex items-center lg:ml-36">
                 <a className="text-white mx-3">Gnanavel Premnath</a>
                 <a className="text-white mx-2">Home</a>
@@ -24,6 +30,6 @@ export function Navbar() {
                     <FaLinkedin className="w-5 h-5" />
                 </a>
             </div>
-        </nav>
+        </motion.nav>
     );
 }
