@@ -1,18 +1,19 @@
+"use client";
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
 
-export default function Navbar() {
+export function Navbar() {
     return (
-        <nav className="flex justify-between items-center bg-transparent p-4">
-            <div className="flex items-center ml-52">
-                <a href="#" className="text-white mx-5">Gnanavel Premnath</a>
-                <a href="#" className="text-white mx-5">Home</a>
-                <a href="#" className="text-white mx-5">About Me</a>
-                <a href="#" className="text-white mx-5">Experience</a>
-                <a href="#" className="text-white mx-5">Project</a>
+        <nav className="absolute top-0 left-0 w-full flex bg-transparent p-4 z-10">
+            <div className="hidden sm:flex items-center lg:ml-36">
+                <a className="text-white mx-3">Gnanavel Premnath</a>
+                <a className="text-white mx-2">Home</a>
+                <a className="text-white mx-2">About</a>
+                <a className="text-white mx-2">Experience</a>
+                <a className="text-white mx-2">Projects</a>
             </div>
-            <div className="flex items-center mr-52">
+            <div className="ml-auto flex items-center lg:mr-40">
                 <a href="mailto:gpa21@sfu.ca" className="text-white mx-2">
                     <IoMdMail className="w-5 h-5" />
                 </a>
