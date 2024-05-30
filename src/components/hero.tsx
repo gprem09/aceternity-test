@@ -13,8 +13,7 @@ export function Lamp() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1, ease: "easeInOut" }}
-        className="-mt-20 text-2xl absolute text-center bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center tracking-tight text-transparent"
-      >
+        className="-mt-20 text-2xl absolute text-center bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center tracking-tight text-transparent">
         hey there, prem welcomes you :)
       </motion.p>
     </div>
